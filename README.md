@@ -247,3 +247,24 @@ git push origin feature-name
 This project is developed for educational and hackathon purposes.
 
 ---
+## 📚 Documentation
+
+For a comprehensive overview of the project's architecture, design decisions, workflow, and technology stack, please refer to the **Project Documentation**.
+
+📄 **[Project Documentation](Documentation.md)**
+
+The documentation includes:
+
+* 🏗️ System Architecture
+* 🤖 Agent Architecture
+* 🔄 End-to-End Workflow
+* 📊 Data Flow
+* 🧩 Component Architecture
+* 🛠️ Technology Stack
+* 💻 Development Tools
+* 📈 Scalability & Extensibility
+* 🔒 Security Considerations
+* 🚀 Future Enhancements
+
+This document provides a detailed explanation of the NexusAI platform's design and serves as the primary technical reference for the project.
+
