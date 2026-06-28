@@ -133,31 +133,31 @@ npm run preview
 
 ## 📊 Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard.png)
 
 ---
 
 ## 👥 Customers
 
-![Customers](screenshots/customers.png)
+![Customers](screenshots/Customers.png)
 
 ---
 
 ## 🤖 Recommendations
 
-![Recommendations](screenshots/recommendations.png)
+![Recommendations](screenshots/Recommendations.png)
 
 ---
 
 ## 🔄 Agent Pipeline
 
-![Agent Pipeline](screenshots/agent-pipeline.png)
+![Agent Pipeline](screenshots/AgentPipeline.png)
 
 ---
 
 ## 🧠 Memory
 
-![Memory](screenshots/memory.png)
+![Memory](screenshots/Memory.png)
 
 ---
 
