@@ -1,0 +1,57 @@
+{
+  "name": "MemoryRecord",
+  "type": "object",
+  "properties": {
+    "customer_id": {
+      "type": "string"
+    },
+    "customer_name": {
+      "type": "string"
+    },
+    "record_type": {
+      "type": "string",
+      "enum": [
+        "Recommendation",
+        "Interaction",
+        "Decision",
+        "Outcome",
+        "Learning"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "recommendation_id": {
+      "type": "string"
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "Approved",
+        "Rejected",
+        "Modified",
+        "N/A"
+      ]
+    },
+    "outcome": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "impact_rating": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "customer_id",
+    "record_type",
+    "title"
+  ]
+}

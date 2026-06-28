@@ -1,0 +1,126 @@
+{
+  "name": "Customer",
+  "type": "object",
+  "properties": {
+    "company_name": {
+      "type": "string"
+    },
+    "contact_name": {
+      "type": "string"
+    },
+    "contact_email": {
+      "type": "string",
+      "format": "email"
+    },
+    "industry": {
+      "type": "string",
+      "enum": [
+        "Technology",
+        "Healthcare",
+        "Finance",
+        "Retail",
+        "Manufacturing",
+        "Education",
+        "Media",
+        "Other"
+      ]
+    },
+    "plan": {
+      "type": "string",
+      "enum": [
+        "Starter",
+        "Professional",
+        "Enterprise",
+        "Custom"
+      ]
+    },
+    "mrr": {
+      "type": "number"
+    },
+    "health_score": {
+      "type": "number"
+    },
+    "engagement_score": {
+      "type": "number"
+    },
+    "usage_trend": {
+      "type": "string",
+      "enum": [
+        "Increasing",
+        "Stable",
+        "Declining",
+        "Critical"
+      ]
+    },
+    "usage_drop_percent": {
+      "type": "number"
+    },
+    "days_since_login": {
+      "type": "number"
+    },
+    "churn_risk": {
+      "type": "string",
+      "enum": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ]
+    },
+    "sentiment": {
+      "type": "string",
+      "enum": [
+        "Positive",
+        "Neutral",
+        "Negative",
+        "Mixed"
+      ]
+    },
+    "journey_stage": {
+      "type": "string",
+      "enum": [
+        "Onboarding",
+        "Adoption",
+        "Growth",
+        "Maturity",
+        "Renewal",
+        "At Risk",
+        "Churning"
+      ]
+    },
+    "renewal_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "contract_start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "lifetime_value": {
+      "type": "number"
+    },
+    "open_tickets": {
+      "type": "number"
+    },
+    "negative_tickets": {
+      "type": "number"
+    },
+    "feature_requests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "csm_assigned": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "company_name",
+    "contact_name",
+    "health_score"
+  ]
+}

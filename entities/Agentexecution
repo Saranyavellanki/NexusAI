@@ -1,0 +1,62 @@
+{
+  "name": "AgentExecution",
+  "type": "object",
+  "properties": {
+    "customer_id": {
+      "type": "string"
+    },
+    "recommendation_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "agent_name": {
+      "type": "string"
+    },
+    "agent_type": {
+      "type": "string",
+      "enum": [
+        "Planner",
+        "Retrieval",
+        "Analysis",
+        "Sentiment",
+        "Reasoning",
+        "Recommendation",
+        "Explanation",
+        "Memory"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Running",
+        "Completed",
+        "Failed"
+      ],
+      "default": "Pending"
+    },
+    "input_data": {
+      "type": "object"
+    },
+    "output_data": {
+      "type": "object"
+    },
+    "duration_ms": {
+      "type": "number"
+    },
+    "model_used": {
+      "type": "string"
+    },
+    "order_index": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "customer_id",
+    "agent_name",
+    "agent_type",
+    "status"
+  ]
+}

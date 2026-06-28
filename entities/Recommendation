@@ -1,0 +1,116 @@
+{
+  "name": "Recommendation",
+  "type": "object",
+  "properties": {
+    "customer_id": {
+      "type": "string"
+    },
+    "customer_name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "Critical",
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    "confidence_score": {
+      "type": "number"
+    },
+    "expected_impact": {
+      "type": "string"
+    },
+    "impact_score": {
+      "type": "number"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Retention",
+        "Upsell",
+        "Support",
+        "Engagement",
+        "Training",
+        "Escalation",
+        "Review"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected",
+        "Modified",
+        "Executed",
+        "Expired"
+      ],
+      "default": "Pending"
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "supporting_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "alternative_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number"
+          },
+          "impact": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "agent_outputs": {
+      "type": "object"
+    },
+    "human_feedback": {
+      "type": "string"
+    },
+    "modified_action": {
+      "type": "string"
+    },
+    "outcome": {
+      "type": "string",
+      "enum": [
+        "Successful",
+        "Partially Successful",
+        "Unsuccessful",
+        "Pending",
+        "Unknown"
+      ],
+      "default": "Pending"
+    },
+    "outcome_notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "customer_id",
+    "title",
+    "priority",
+    "confidence_score",
+    "status"
+  ]
+}
