@@ -251,7 +251,7 @@ This project is developed for educational and hackathon purposes.
 
 For a comprehensive overview of the project's architecture, design decisions, workflow, and technology stack, please refer to the **Project Documentation**.
 
-📄 **[Project Documentation](Documentation.md)**
+📄 **[Project Documentation](Document.md)**
 
 The documentation includes:
 
